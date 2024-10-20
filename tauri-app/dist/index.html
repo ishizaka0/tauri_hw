@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tauri + Yew App</title>
+    <link rel="stylesheet" href="/styles-9dc2f689f0290d19.css" integrity="sha384&#x2D;I4Okh8E&#x2F;EX0Za1o4E5ysQ6fEB26nHsMfDy&#x2F;QNFaOWPHWgAaXwdhbf4PtLhnIcb90"/>
+    
+  <link rel="modulepreload" href="/tauri-app-ui-66fcfe49ec934c9f.js" crossorigin=anonymous integrity="sha384-xUkMUzP6Xjp8oKqCL9r/rF1sg8o94wzzkNEeno8uOnNxwok11mW/JwLSqtguEL6g"><link rel="preload" href="/tauri-app-ui-66fcfe49ec934c9f_bg.wasm" crossorigin=anonymous integrity="sha384-44/NepbtKVF1dce0ZK9eJef/37LMZQAat3ceIKbdY3d8jkTvE+q6HfU/7gkPRXMK" as="fetch" type="application/wasm"></head>
+  <body>
+<script type="module" nonce="DNST98RLi7W+2cz05htcQQ==">
+import init, * as bindings from '/tauri-app-ui-66fcfe49ec934c9f.js';
+const wasm = await init('/tauri-app-ui-66fcfe49ec934c9f_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
